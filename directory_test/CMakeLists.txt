@@ -10,6 +10,7 @@ include_directories(include)
 #However, the file(GLOB...) allows for wildcard additions:
 file(GLOB SOURCES "src/*.cpp")
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 add_executable(testStudent ${SOURCES})
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
